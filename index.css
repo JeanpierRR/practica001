@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.caja-izquierda, .caja-derecha {
+    padding: 80px;
+    max-width: 100%;
+}
