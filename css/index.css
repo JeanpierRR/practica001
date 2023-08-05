@@ -9,6 +9,7 @@ body {
     height: 700px;
     margin: auto;
     position: relative;
+    overflow: hidden;
 }
 
 .list {
