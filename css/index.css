@@ -74,3 +74,9 @@ body {
 .dots li.active {
     width: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 400px;
+    }
+}
