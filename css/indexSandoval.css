@@ -4,6 +4,15 @@ body {
     background-color: rgba(17,24,39,255);
 }
 
+:root {
+    --color-caja: #ffff;
+    --color-fondo-boton: #ffff;
+    --color-boton-01: rgba(37,99,235,255);
+    --color-boton-02: rgba(22,60,99,255);
+    --color-boton-slider: rgba(240, 255, 255, 0.324);
+    --color-boton-slider-flecha: rgb(0, 0, 0);
+}
+
 .contenedor {
     width: 100%;
     height: auto;
@@ -20,7 +29,7 @@ body {
 }
 
 .caja-izquierda p {
-    color: #ffff;
+    color: var(--color-caja);
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -42,7 +51,7 @@ body {
     border-radius: 10px;
     padding: 15px 30px;
     margin-top: 45px;
-    color: #ffff;
+    color: var(--color-fondo-boton);
     text-decoration: none;
 }
 
@@ -55,7 +64,7 @@ body {
     border-radius: 10px;
     padding: 15px 30px;
     margin-top: 45px;
-    color: #ffff;
+    color: var(--color-fondo-boton);
     text-decoration: none;
 }
 
@@ -116,8 +125,8 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(240, 255, 255, 0.324);
-    color: rgb(0, 0, 0);
+    background-color: var(--color-boton-slider);
+    color: var(--color-boton-slider-flecha);
     border: none;
     font-family: monospace;
     font-weight: bold;
@@ -126,7 +135,7 @@ body {
 .dots {
     position: absolute;
     bottom: 10px;
-    color: rgb(0, 0, 0);
+    color: var(--color-boton-slider-flecha);
     left: 0;
     width: 100%;
     margin: 0;
