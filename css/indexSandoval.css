@@ -1,15 +1,43 @@
 body {
     margin: 0;
-    font-family: monospace;
+    font-family: sans-serif;
+    background-color: rgba(17,24,39,255);
 }
 
+.contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+.caja-izquierda {
+    margin-right: 80px;
+    margin-left: 120px;
+    margin-top: 80px;
+}
+
+.caja-izquierda p {
+    color: #ffff;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.caja-derecha {
+    margin-top: 160px;
+    margin-right: 120px;
+} 
+
 .slider {
-    width: 1300px;
+    width: 800px;
     max-width: 100vw;
-    height: 700px;
+    height: 300px;
     margin: auto;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .list {
@@ -23,7 +51,7 @@ body {
 }
 
 .list img {
-    width: 1300px;
+    width: 800px;
     max-width: 100vw;
     height: 100%;
     object-fit: cover;
@@ -42,7 +70,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(240, 255, 255, 0.793);
+    background-color: rgba(240, 255, 255, 0.324);
     color: rgb(0, 0, 0);
     border: none;
     font-family: monospace;
@@ -52,7 +80,7 @@ body {
 .dots {
     position: absolute;
     bottom: 10px;
-    color: azure;
+    color: rgb(0, 0, 0);
     left: 0;
     width: 100%;
     margin: 0;
@@ -65,7 +93,7 @@ body {
     list-style: none;
     width: 10px;
     height: 10px;
-    background-color: aquamarine;
+    background-color: rgba(255, 255, 255, 0.401);
     margin: 20px;
     border-radius: 20px;
     transition: 1s;
@@ -75,13 +103,12 @@ body {
     width: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .slider {
         height: 400px;
     }
-}
-.logos {
-    padding: 7px;
-    width: 50px;
-    height: 44px;
+
+    .contenedor {
+        flex-direction: column;
+    }
 }
