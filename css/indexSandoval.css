@@ -25,6 +25,52 @@ body {
     padding-bottom: 0px;
 }
 
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-right: 520px;
+}
+
+.boton-01 {
+    display: block;
+    width: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: rgba(37,99,235,255);
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin-top: 45px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.boton-02 {
+    display: block;
+    width: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: rgba(22,60,99,255);
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin-top: 45px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.boton-02:hover {
+    background-color: transparent;
+    border: 2px solid rgba(41,151,188,255);
+    color: rgba(41,151,188,255);
+}
+
+.boton-01:hover {
+    background-color: transparent;
+    border: 2px solid rgba(41,151,188,255);
+    color: rgba(41,151,188,255);
+}
+
 .caja-derecha {
     margin-top: 160px;
     margin-right: 120px;
@@ -33,7 +79,7 @@ body {
 .slider {
     width: 800px;
     max-width: 100vw;
-    height: 300px;
+    height: 500px;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -105,10 +151,41 @@ body {
 
 @media screen and (max-width: 600px) {
     .slider {
+        width: 530px;
         height: 400px;
+        margin-right: 20px;
+        margin-left: 10px;
     }
 
     .contenedor {
         flex-direction: column;
+        padding: 0px;
+    }
+
+    .caja-izquierda {
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .caja-derecha {
+        margin-top: 40px;
+        margin-right: 10px;
+        margin-left: 10px;  
+    }
+
+    .list img {
+        width: 530px;
+        max-width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 10px;
+        margin-right: 180px;
     }
 }
